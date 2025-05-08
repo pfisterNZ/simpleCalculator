@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora Simple</h1>
+        <h2>Pfister Nazareno</h2>
+    </header>
+    <div class="container">
+        <div class="top">
+            <input type="text" name="text" id="text" placeholder="Buscar">
+            <button id="copiarBTN" onclick="copiar()">Copiar</button>
+        </div>
+        <div class="bottom">
+            <button value="C" class="btn C" onclick="borrar()">C</button>
+            <button value="%" class="btn mod" onclick="agregar('%')">%</button>
+            <button value="+/-" class="btn cambiarSigno" onclick="agregar('+/-')">+/-</button>
+            <button value="x" class="btn multiplicar" onclick="agregar('*')">x</button>
+            <button value="1" class="btn uno" onclick="agregar('1')">1</button>
+            <button value="2" class="btn dos" onclick="agregar('2')">2</button>
+            <button value="3" class="btn tres" onclick="agregar('3')">3</button>
+            <button value="/" class="btn dividir" onclick="agregar('/')">/</button>
+            <button value="4" class="btn cuatro" onclick="agregar('4')">4</button>
+            <button value="5" class="btn cinco" onclick="agregar('5')">5</button>
+            <button value="6" class="btn seis" onclick="agregar('6')">6</button>
+            <button value="+" class="btn sumar" onclick="agregar('+')">+</button>
+            <button value="7" class="btn siete" onclick="agregar('7')">7</button>
+            <button value="8" class="btn ocho" onclick="agregar('8')">8</button>
+            <button value="9" class="btn nueve" onclick="agregar('9')">9</button>
+            <button value="-" class="btn restar" onclick="agregar('-')">-</button>
+            <br>
+            <button value="0" class="btn cero" onclick="agregar('0')">0</button>
+            <button value="=" class="btn igual" onclick="calcular()">=</button>
+            
+        </div>
+    </div>
+</body>
+</html>
